@@ -66,8 +66,8 @@ app.get('/', async(request, response) => {
 
 })
 
-const port = 3000;
+const PORT = process.env.PORT
 
-app.listen(port, () => {
-    console.log(`Server start at ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server start at ${PORT}`);
 });
